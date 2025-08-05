@@ -1,0 +1,135 @@
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* BASE */
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: #fdfaf5; /* fundo claro estilo papel */
+  color: #1a1a1a;
+}
+
+/* CONTAINER */
+#container {
+  width: 100%;
+  max-width: 588px;
+  margin: 56px auto 0px;
+  padding: 0 24px;
+}
+
+/* PROFILE */
+#profile {
+  text-align: center;
+  padding: 24px;
+}
+
+#profile img {
+  width: 112px;
+  border-radius: 50%;
+}
+
+#profile p {
+  font-weight: 500;
+  line-height: 24px;
+  margin-top: 8px;
+  color: #1a1a1a;
+}
+
+/* LINKS */
+ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding: 24px 0;
+}
+
+ul li a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 16px 24px;
+  background: #fdfaf5; /* mesma cor do fundo */
+  border: 1px solid #e0dcd4; /* borda leve */
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 500;
+  color: #1a1a1a;
+  transition: background 0.2s, border 0.2s, box-shadow 0.2s;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.02); /* sombra sutil */
+}
+
+ul li a:hover {
+  background: #f0ece6; /* leve contraste no hover */
+  border: 1px solid #c2beb7;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.04); /* destaque suave no hover */
+}
+
+ul li a:focus {
+  outline: 2px solid #999;
+  outline-offset: 2px;
+}
+
+ul li a ion-icon {
+  font-size: 20px;
+  color: #1a1a1a;
+}
+
+/* SOCIAL LINKS */
+#social-links {
+  display: flex;
+  justify-content: center;
+  padding: 24px 0;
+  font-size: 24px;
+  gap: 16px;
+}
+
+#social-links a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 16px;
+  border-radius: 50%;
+  background-color: #fdfaf5;
+  color: #1a1a1a;
+  border: 1px solid #ddd;
+  transition: background 0.2s, color 0.2s, box-shadow 0.2s;
+}
+
+#social-links a:hover {
+  background: #f0ece6;
+  color: #000;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.04);
+}
+
+#social-links a:focus {
+  outline: 2px solid #999;
+  outline-offset: 2px;
+}
+
+/* FOOTER */
+footer {
+  margin-top: 24px;
+  text-align: center;
+  font-size: 14px;
+  color: #888;
+}
+
+footer a {
+  color: #888;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+footer a:hover {
+  color: #333;
+}
+
+footer a:focus {
+  outline: 2px solid #333;
+  outline-offset: 2px;
+}
