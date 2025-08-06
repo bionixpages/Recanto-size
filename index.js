@@ -1,29 +1,29 @@
-function toggleMode() {
-  const html = document.documentElement
-  const isLight = html.classList.toggle('light') // só alterna UMA VEZ
+document.addEventListener('DOMContentLoaded', () => {
+  const imagens = document.querySelectorAll('.mosaico-galeria img') // ajustado aqui
+  const modal = document.getElementById('modal-galeria')
+  const imgExpandida = document.getElementById('imgExpandida')
+  const fecharModal = document.getElementById('fecharModal')
 
-  const img = document.querySelector('#avatar') // usando ID ou seletor correto
-  if (isLight) {
-    img.setAttribute('src', './assets/avatar-light.png')
-  } else {
-    img.setAttribute('src', './assets/avatar.png')
-  }
+  imagens.forEach((img) => {
+    img.style.cursor = 'pointer'
+    img.addEventListener('click', () => {
+      modal.style.display = 'block'
+      imgExpandida.src = img.src
+      imgExpandida.alt = img.alt || 'Imagem em destaque'
+    })
+  })
 
-  // salvar no localStorage (opcional)
-  localStorage.setItem('theme', isLight ? 'light' : 'dark')
-}
+  fecharModal.addEventListener('click', () => {
+    modal.style.display = 'none'
+    imgExpandida.src = ''
+    imgExpandida.alt = ''
+  })
 
-// Aplicar o tema salvo ao carregar
-window.addEventListener('DOMContentLoaded', () => {
-  const savedTheme = localStorage.getItem('theme')
-  const html = document.documentElement
-  const img = document.querySelector('#avatar')
-
-  if (savedTheme === 'light') {
-    html.classList.add('light')
-    img.setAttribute('src', './assets/avatar-light.png')
-  } else {
-    html.classList.remove('light')
-    img.setAttribute('src', './assets/avatar.png')
-  }
+  window.addEventListener('click', (e) => {
+    if (e.target === modal) {
+      modal.style.display = 'none'
+      imgExpandida.src = ''
+      imgExpandida.alt = ''
+    }
+  })
 })

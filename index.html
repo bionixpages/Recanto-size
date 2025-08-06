@@ -2,7 +2,7 @@
 <html lang="pt-br">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Recanto Size</title>
 
     <!-- Fontes -->
@@ -53,7 +53,7 @@
         </li>
         <li>
           <a
-            href="https://docs.google.com/forms/d/1dRUPnZxVN1t7B7zy8bsr-31f9rBsGkIlrmxTPP8-9BY/edit"
+            href="https://docs.google.com/forms/d/e/1FAIpQLSd5AFhNDt9l4zLA1E9Tz8xwQ5UAGpSjepyGvpNXrwQIjg510g/viewform"
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -63,7 +63,7 @@
         </li>
         <li>
           <a
-            href="https://www.google.com/maps/place/4WGF%2B4X+Recanto+Size+-+Pesqueiro+-+Araguari,+MG/data=!4m2!3m1!1s0x94a5b300543fb607:0xf63bc50e0e4b054c?utm_source=mstt_1&entry=gps&coh=192189&g_ep=CAESBzI1LjMxLjIYACCenQoqhwEsOTQyNjc3MjcsOTQyMjMyOTksOTQyMTY0MTMsOTQyODA1NzYsOTQyMTI0OTYsOTQyMDczOTQsOTQyMDc1MDYsOTQyMDg1MDYsOTQyMTc1MjMsOTQyMTg2NTMsOTQyMjk4MzksOTQyNzUxNjgsNDcwODQzOTMsOTQyMTMyMDAsOTQyNTgzMjVCAkJS&skid=33181594-b75e-4cc4-9b72-e245522ef18f&g_st=awb"
+            href="https://www.google.com/maps/place/4WGF%2B4X+Recanto+Size+-+Pesqueiro+-+Araguari,+MG/data=!4m2!3m1!1s0x94a5b300543fb607:0xf63bc50e0e4b054c"
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -83,7 +83,7 @@
         </li>
       </ul>
 
-      <!-- Links sociais com ícones -->
+      <!-- Links sociais -->
       <nav id="social-links">
         <a
           href="https://www.instagram.com/recantosizepesqueiro/"
@@ -93,7 +93,6 @@
         >
           <ion-icon name="logo-instagram"></ion-icon>
         </a>
-
         <a
           href="https://www.tiktok.com/search?q=recanto%20size%20pesqueiro"
           target="_blank"
@@ -102,7 +101,6 @@
         >
           <ion-icon name="logo-tiktok"></ion-icon>
         </a>
-
         <a
           href="https://wa.me/5534992845745?text=Oi%20boa%20noite%2C%20qual%20o%20valor%20do%20aluguel%20de%20caiaques"
           target="_blank"
@@ -112,6 +110,15 @@
           <ion-icon name="logo-whatsapp"></ion-icon>
         </a>
       </nav>
+
+      <!-- Galeria moderna -->
+      <section id="galeria">
+        <div class="mosaico-galeria">
+          <img src="./assets/foto2.jpeg" alt="Deck com vista para o lago" />
+          <img src="./assets/foto3.jpeg" alt="Área coberta ao entardecer" />
+          <img src="./assets/foto4.jpeg" alt="Caiaques prontos para uso" />
+        </div>
+      </section>
 
       <!-- Rodapé -->
       <footer>
@@ -129,5 +136,14 @@
       nomodule
       src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
     ></script>
+
+    <!-- Modal da Galeria -->
+    <div id="modal-galeria" class="modal">
+      <span class="fechar" id="fecharModal">&times;</span>
+      <img class="modal-conteudo" id="imgExpandida" alt="Imagem em destaque" />
+    </div>
+
+    <!-- Script JS -->
+    <script src="./index.js"></script>
   </body>
 </html>
